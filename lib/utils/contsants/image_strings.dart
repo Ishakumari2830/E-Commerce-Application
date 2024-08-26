@@ -40,6 +40,12 @@ class TImages{
   ///profile
   static const String user = "assets/images/User/user.png";
 
+  ///product reviews
+  static const String userProfileImage1 = "assets/images/reviews/profile_image.jpeg";
+  static const String userProfileImage2 = "assets/images/reviews/profile_image2.jpg";
+  static const String userProfileImage3 = "assets/images/reviews/profile_image3.jpeg";
+
+
 
 
 }

@@ -16,7 +16,7 @@ class TProductAttributes extends StatelessWidget {
     final dark = THelperFunctions.isDarkMode(context);
     return  Column(
       children: [
-        ///Seleced Attrobutes Pricing & description
+        ///Selected Attributes Pricing & description
         TRoundedContainer(
           padding: EdgeInsets.all(TSizes.md),
           backgroundColor: dark ? TColors.darkerGrey : TColors.grey,
@@ -113,7 +113,7 @@ class TProductAttributes extends StatelessWidget {
                 TChoiceChip(text: 'UK 7',selected: false,onSelected: (value){}),
                 TChoiceChip(text: 'UK 8',selected:false,onSelected: (value){}),
               ],
-            )
+            ),
 
 
           ],
