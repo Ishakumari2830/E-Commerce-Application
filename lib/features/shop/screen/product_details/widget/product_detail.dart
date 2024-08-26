@@ -1,6 +1,4 @@
-import 'package:e_comrc/common/widgets/appBar/appbar.dart';
-import 'package:e_comrc/common/widgets/icons/t_circular_iconn.dart';
-import 'package:e_comrc/common/widgets/images/t_rounded_images.dart';
+
 import 'package:e_comrc/common/widgets/texts/section_heading.dart';
 import 'package:e_comrc/features/shop/screen/product_details/widget/bottom_add_to_cart_widget.dart';
 import 'package:e_comrc/features/shop/screen/product_details/widget/product_attributes.dart';
@@ -12,9 +10,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
-import '../../../../../common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
-import '../../../../../utils/contsants/colors.dart';
-import '../../../../../utils/contsants/image_strings.dart';
+
 import '../../../../../utils/contsants/sizes.dart';
 
 class ProductDetailScreen extends StatelessWidget {
