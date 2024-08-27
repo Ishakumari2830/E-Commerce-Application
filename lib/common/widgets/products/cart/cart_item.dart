@@ -16,13 +16,16 @@ class TCartItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+
       children: [
         ///image
-        TRoundedImage(imageurl: TImages.product4,
-            width: 60,
-            height: 60,
-            padding: EdgeInsets.all(TSizes.sm),
-            backgroundColor: THelperFunctions.isDarkMode(context) ?  TColors.darkerGrey : TColors.light),
+        Flexible(
+          child: TRoundedImage(imageurl: TImages.product4,
+              width: 60,
+              height: 60,
+              padding: EdgeInsets.all(TSizes.sm),
+              backgroundColor: THelperFunctions.isDarkMode(context) ?  TColors.darkerGrey : TColors.light),
+        ),
         SizedBox(width: TSizes.spaceBtwItems,),
 
         ///title ,price and size
@@ -40,9 +43,9 @@ class TCartItem extends StatelessWidget {
                       children:
                       [
                         TextSpan(text: 'Color',style: Theme.of(context).textTheme.bodySmall),
-                        TextSpan(text: 'Green',style: Theme.of(context).textTheme.bodySmall),
-                        TextSpan(text: 'Size',style: Theme.of(context).textTheme.bodySmall),
-                        TextSpan(text: 'UK 6',style: Theme.of(context).textTheme.bodySmall)
+                        TextSpan(text: ' Green',style: Theme.of(context).textTheme.bodyLarge),
+                        TextSpan(text: ' ,Size',style: Theme.of(context).textTheme.bodySmall),
+                        TextSpan(text: ' UK6',style: Theme.of(context).textTheme.bodyLarge)
                       ]
                   )
               )

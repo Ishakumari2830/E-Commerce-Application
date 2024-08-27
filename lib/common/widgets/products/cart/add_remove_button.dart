@@ -16,10 +16,11 @@ class TProductQuantityWithAddAndRemove extends StatelessWidget {
     return
         ///Add Remove Button
         Row(
+          //crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TCircularIcon(icon: Iconsax.minus,
               width: 32,
-              height: 32,
+              height:32,
               size: TSizes.md,
               color: THelperFunctions.isDarkMode(context) ? TColors.white: TColors.black,
               backgroundColor: THelperFunctions.isDarkMode(context) ? TColors.darkerGrey : TColors.light,

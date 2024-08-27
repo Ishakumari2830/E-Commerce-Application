@@ -4,9 +4,13 @@ import 'package:e_comrc/common/widgets/images/t_rounded_images.dart';
 import 'package:e_comrc/common/widgets/texts/ProductPriceText.dart';
 import 'package:e_comrc/common/widgets/texts/ProductTitleText.dart';
 import 'package:e_comrc/common/widgets/texts/t_brand_title_text_with_verified_icon.dart';
+import 'package:e_comrc/features/shop/screen/cart/widgets/cart_items.dart';
+import 'package:e_comrc/features/shop/screen/checkOut/checkOut.dart';
 import 'package:e_comrc/utils/contsants/sizes.dart';
 import 'package:e_comrc/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/products/cart/add_remove_button.dart';
@@ -25,40 +29,13 @@ class CartScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: EdgeInsets.all(TSizes.defaultSpace),
-        child: ListView.separated(
-           shrinkWrap: true,//for visiblity of image
-            separatorBuilder: (_, __) => SizedBox(
-                  height: TSizes.spaceBtwSections,
-                ),
-            itemCount: 4,
-          itemBuilder: (_,index)=> Column(
-            children: [
-              TCartItem(),
-              SizedBox(height: TSizes.spaceBtwItems,),
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Row(
-                children: [
-                  ///extra space
-                  SizedBox(width: 70,),
-                  ///add remove button
-                  TProductQuantityWithAddAndRemove(),
-                ],
-              ),
-
-              TProductPriceText(price: '256')
-              ],
-          ),
-
-
-
-            ],
-          ),),
+        ///Items in cart
+        child: TCartItems(),
       ),
+      ///checkout button
       bottomNavigationBar: Padding(
         padding:  EdgeInsets.all(TSizes.defaultSpace),
-        child: ElevatedButton(onPressed: (){},child: Text('CheckOut \$ 256.0'),),
+        child: ElevatedButton(onPressed: () => Get.to(()=>CheckoutScreen()),child: Text('CheckOut \$ 256.0'),),
       ),
     );
   }

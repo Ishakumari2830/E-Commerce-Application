@@ -45,6 +45,16 @@ class TImages{
   static const String userProfileImage2 = "assets/images/reviews/profile_image2.jpg";
   static const String userProfileImage3 = "assets/images/reviews/profile_image3.jpeg";
 
+  ///Payment Mathod
+   static const String applePay = "assets/icons/payments_methods/apple_pay.png";
+   static const String Creditcard = "assets/icons/payments_methods/credit-card.png";
+   static const String Googlepay = "assets/icons/payments_methods/google_pay.jpeg";
+  static const String masterCard= "assets/icons/payments_methods/mastercard.png";
+  static const String Paypal = "assets/icons/payments_methods/paypal.png";
+  static const String visa = "assets/icons/payments_methods/visa.jpeg";
+  static const String paytm = "assets/icons/payments_methods/paytm.png";
+  static const String successfulPaymentIcon = "assets/icons/payments_methods/successful_payment.png";
+
 
 
 
