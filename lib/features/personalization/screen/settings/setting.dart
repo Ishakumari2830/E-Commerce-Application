@@ -4,6 +4,7 @@ import 'package:e_comrc/common/widgets/images/t_circular_images.dart';
 import 'package:e_comrc/common/widgets/texts/section_heading.dart';
 import 'package:e_comrc/features/personalization/screen/address/addresses.dart';
 import 'package:e_comrc/features/personalization/screen/profile/profile.dart';
+import 'package:e_comrc/features/shop/screen/order/order.dart';
 import 'package:e_comrc/utils/contsants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -73,7 +74,7 @@ class SettingScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subTitle: 'In Progress and Completed Orders',
-                    onTap: (){},
+                    onTap: () => Get.to(()=> OrderScreen()),
                   ),
                   TSettingMenuTile(
                     icon: Iconsax.bank,
