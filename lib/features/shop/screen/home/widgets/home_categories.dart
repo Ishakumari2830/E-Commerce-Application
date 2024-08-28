@@ -1,4 +1,7 @@
+import 'package:e_comrc/features/shop/screen/sub_category/sub_categories.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 import '../../../../../common/widgets/image_text_widgets/horizontal_image_text.dart';
 import '../../../../../utils/contsants/image_strings.dart';
@@ -20,7 +23,7 @@ class THomecategorie extends StatelessWidget {
             return THorizontalImageText(
               image: TImages.sportIcon,
               title: 'Ball',
-              onTap: (){},
+              onTap: () => Get.to(()=>SubCategoriesScreen()),
             );
           }),
     );
