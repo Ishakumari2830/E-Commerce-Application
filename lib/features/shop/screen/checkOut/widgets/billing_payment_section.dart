@@ -16,22 +16,22 @@ class TBillingPaymentSection extends StatelessWidget {
     return Column(
       children: [
         TSectionheading(title: 'Payment Method',buttonTitle: 'Change',onPressed: (){},),
-        SizedBox(height: TSizes.spaceBtwItems/2,),
+        const SizedBox(height: TSizes.spaceBtwItems/2,),
         Row(
           children: [
             TRoundedContainer(
               width:60,
               height: 35,
               backgroundColor: dark ? TColors.light : TColors.white,
-              padding: EdgeInsets.all(TSizes.sm),
-              child: Image(image : AssetImage(TImages.Paypal),
+              padding: const EdgeInsets.all(TSizes.sm),
+              child: const Image(image : AssetImage(TImages.Paypal),
                 fit: BoxFit.contain,
 
               ),
 
 
             ),
-            SizedBox(height: TSizes.spaceBtwItems/2,),
+            const SizedBox(height: TSizes.spaceBtwItems/2,),
             Text('paypal',style: Theme.of(context).textTheme.bodyLarge,)
 
 

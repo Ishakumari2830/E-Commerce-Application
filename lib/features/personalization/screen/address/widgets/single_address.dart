@@ -15,7 +15,7 @@ class TSingleAddress extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return TRoundedContainer(
-      padding: EdgeInsets.all(TSizes.md),
+      padding: const EdgeInsets.all(TSizes.md),
       width: double.infinity,
       showBorder: true,
       backgroundColor: selectedAddress
@@ -26,7 +26,7 @@ class TSingleAddress extends StatelessWidget {
           : dark
               ? TColors.darkerGrey
               : TColors.grey,
-      margin: EdgeInsets.only(bottom: TSizes.spaceBtwItems),
+      margin: const EdgeInsets.only(bottom: TSizes.spaceBtwItems),
       child: Stack(
         children: [
           Positioned(
@@ -50,12 +50,12 @@ class TSingleAddress extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 style: Theme.of(context).textTheme.titleLarge,
               ),
-              SizedBox(
+              const SizedBox(
                 height: TSizes.sm/2,
               ),
-              Text("+919572323234",maxLines: 1,overflow: TextOverflow.ellipsis,),
-              SizedBox(height: TSizes.sm/2,),
-              Text('Gupta Vastralaya, Main Road garhwa, Jharkhand,822114',softWrap: true,)
+              const Text("+919572323234",maxLines: 1,overflow: TextOverflow.ellipsis,),
+              const SizedBox(height: TSizes.sm/2,),
+              const Text('Gupta Vastralaya, Main Road garhwa, Jharkhand,822114',softWrap: true,)
             ],
           )
         ],

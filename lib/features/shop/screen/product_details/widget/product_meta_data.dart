@@ -30,29 +30,29 @@ class TProductMetaData extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: TSizes.sm,vertical: TSizes.xs),
               child: Text('25%',style: Theme.of(context).textTheme.labelLarge!.apply(color: TColors.black),),
             ),
-            SizedBox(width: TSizes.spaceBtwItems,),
+            const SizedBox(width: TSizes.spaceBtwItems,),
 
             ///price
             Text('\$250',style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough),),
-            SizedBox(width: TSizes.spaceBtwItems,),
-            TProductPriceText(price: '175',isLarge: true,)
+            const SizedBox(width: TSizes.spaceBtwItems,),
+            const TProductPriceText(price: '175',isLarge: true,)
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems/1.5,),
+        const SizedBox(height: TSizes.spaceBtwItems/1.5,),
         ///title
-        TProductTitleText(title: 'Green Adidas Shoe'),
-        SizedBox(height: TSizes.spaceBtwItems/1.5,),
+        const TProductTitleText(title: 'Green Adidas Shoe'),
+        const SizedBox(height: TSizes.spaceBtwItems/1.5,),
 
         ///stock status
         Row(
           children: [
-            TProductTitleText(title: 'Status'),
-            SizedBox(width: TSizes.spaceBtwItems,),
+            const TProductTitleText(title: 'Status'),
+            const SizedBox(width: TSizes.spaceBtwItems,),
             Text('In Stock',style: Theme.of(context).textTheme.titleMedium,),
           ],
         ),
 
-        SizedBox(height: TSizes.spaceBtwItems/1.5,),
+        const SizedBox(height: TSizes.spaceBtwItems/1.5,),
         ///Brand
         Row(
           children: [
@@ -60,7 +60,7 @@ class TProductMetaData extends StatelessWidget {
             height: 32,
             width: 32,
             overlayColor: dark ? TColors.white: TColors.black,),
-            TBrandTitleWithVerifiedIcon(title: 'Adidas',brandtextSizes: TextSizes.medium,),
+            const TBrandTitleWithVerifiedIcon(title: 'Adidas',brandtextSizes: TextSizes.medium,),
           ],
         )
       ],

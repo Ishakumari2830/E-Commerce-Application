@@ -21,27 +21,27 @@ class UserReviewCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                CircleAvatar(
+                const CircleAvatar(
                   backgroundImage: AssetImage(TImages.userProfileImage1),
                 ),
-                SizedBox(width: TSizes.spaceBtwItems,),
+                const SizedBox(width: TSizes.spaceBtwItems,),
                 Text('John Doe',style: Theme.of(context).textTheme.titleLarge,)
               ],
             ),
-            IconButton(onPressed: (){}, icon: Icon(Icons.more_vert))
+            IconButton(onPressed: (){}, icon: const Icon(Icons.more_vert))
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems,),
+        const SizedBox(height: TSizes.spaceBtwItems,),
         ///Review
         Row(
           children: [
-            TRatingBarIndicator(rating: 4),
-            SizedBox(width: TSizes.spaceBtwItems,),
+            const TRatingBarIndicator(rating: 4),
+            const SizedBox(width: TSizes.spaceBtwItems,),
             Text('01 Nov 2023',style: Theme.of(context).textTheme.bodyMedium,)
           ],
         ),
-        SizedBox(height: TSizes.spaceBtwItems,),
-        ReadMoreText(
+        const SizedBox(height: TSizes.spaceBtwItems,),
+        const ReadMoreText(
           'The User Interface of the app is quite intuitive , I was able to navigate and continue purchasing '
               'seamlessly,Great Job!',
           trimLines: 1,
@@ -52,12 +52,12 @@ class UserReviewCard extends StatelessWidget {
           lessStyle: TextStyle(fontSize: 14,fontWeight:FontWeight.bold,color: TColors.primary),
 
         ),
-        SizedBox(height: TSizes.spaceBtwItems,),
+        const SizedBox(height: TSizes.spaceBtwItems,),
 
         ///Company review
         TRoundedContainer(
           backgroundColor: dark ? TColors.darkerGrey : TColors.grey,
-          child: Padding(padding: EdgeInsets.all(TSizes.md),
+          child: Padding(padding: const EdgeInsets.all(TSizes.md),
           child: Column(
             children: [
               Row(
@@ -67,8 +67,8 @@ class UserReviewCard extends StatelessWidget {
                   Text('07 Nov,2023',style: Theme.of(context).textTheme.bodyMedium,)
                 ],
               ),
-              SizedBox(height: TSizes.spaceBtwItems,),
-              ReadMoreText(
+              const SizedBox(height: TSizes.spaceBtwItems,),
+              const ReadMoreText(
                   'The User Interface of the app is quite intuitive , I was able to navigate and continue purchasing '
                       'seamlessly,Great Job!',
                   trimLines: 1,
@@ -82,7 +82,7 @@ class UserReviewCard extends StatelessWidget {
             ],
           ),),
         ),
-        SizedBox(
+        const SizedBox(
           height: TSizes.spaceBtwSections,
         )
       ],

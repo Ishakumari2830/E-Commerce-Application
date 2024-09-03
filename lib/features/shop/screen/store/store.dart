@@ -3,9 +3,11 @@ import 'package:e_comrc/common/widgets/custom_shapes/Container/search_container.
 import 'package:e_comrc/common/widgets/layout/grid_layout.dart';
 import 'package:e_comrc/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:e_comrc/common/widgets/texts/section_heading.dart';
+import 'package:e_comrc/features/shop/screen/brand/all_brands.dart';
 import 'package:e_comrc/features/shop/screen/store/widgets/category_tab.dart';
 import 'package:e_comrc/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 import '../../../../common/widgets/appBar/tabbar.dart';
 import '../../../../common/widgets/brands/brand_card.dart';
@@ -50,7 +52,7 @@ class Store extends StatelessWidget {
                         height: TSizes.spaceBtwSections,
                       ),
                       ///feature brand
-                      TSectionheading(title: 'Featured Brands',showActionButton: true,onPressed: (){}),
+                      TSectionheading(title: 'Featured Brands',showActionButton: true,onPressed: () => Get.to(()=>const AllBrandScreen())),
                       const SizedBox(
                         height: TSizes.spaceBtwItems/1.5,
 

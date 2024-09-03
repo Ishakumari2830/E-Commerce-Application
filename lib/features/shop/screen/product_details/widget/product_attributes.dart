@@ -18,40 +18,40 @@ class TProductAttributes extends StatelessWidget {
       children: [
         ///Selected Attributes Pricing & description
         TRoundedContainer(
-          padding: EdgeInsets.all(TSizes.md),
+          padding: const EdgeInsets.all(TSizes.md),
           backgroundColor: dark ? TColors.darkerGrey : TColors.grey,
           child: Column(
             children: [
               ///Title,price and stockItems
               Row(
                 children: [
-                  TSectionheading(title: 'Variation',showActionButton: false,),
-                  SizedBox(width: TSizes.spaceBtwItems,),
+                  const TSectionheading(title: 'Variation',showActionButton: false,),
+                  const SizedBox(width: TSizes.spaceBtwItems,),
                   
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Row(
                         children: [
-                          TProductTitleText(title: 'Price : ',smallsize: true,),
-                          SizedBox(width: TSizes.spaceBtwItems,),
+                          const TProductTitleText(title: 'Price : ',smallsize: true,),
+                          const SizedBox(width: TSizes.spaceBtwItems,),
                           ///Actual Price
                           Text(
                             '\$25',
                             style: Theme.of(context).textTheme.titleSmall!.apply(decoration : TextDecoration.lineThrough),
                           ),
-                          SizedBox(width: TSizes.spaceBtwItems,),
+                          const SizedBox(width: TSizes.spaceBtwItems,),
 
                           ///Sale Price
-                          TProductPriceText(price: '20'),
+                          const TProductPriceText(price: '20'),
 
                         ],
                       ),
                       ///Stock
                       Row(
                         children: [
-                          TProductTitleText(title: 'Stock : ',smallsize: true,),
-                          SizedBox(width: TSizes.spaceBtwItems,),
+                          const TProductTitleText(title: 'Stock : ',smallsize: true,),
+                          const SizedBox(width: TSizes.spaceBtwItems,),
 
                           Text(
                             'In Stock',
@@ -71,21 +71,21 @@ class TProductAttributes extends StatelessWidget {
                 
               ),
               ///Variation Description
-              TProductTitleText(title: "This is the Description of the product and it can upto max 4 lines",
+              const TProductTitleText(title: "This is the Description of the product and it can upto max 4 lines",
                 smallsize: true,
                 maxlines: 4,
               )
             ],
           ),
         ),
-        SizedBox(height: TSizes.spaceBtwItems,),
+        const SizedBox(height: TSizes.spaceBtwItems,),
 
         ///Attributes
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            TSectionheading(title: 'Colors',showActionButton: false,),
-            SizedBox(
+            const TSectionheading(title: 'Colors',showActionButton: false,),
+            const SizedBox(
               height: TSizes.spaceBtwItems / 2,
             ),
           Wrap(//in a row and for exceed limit, push to next line
@@ -106,8 +106,8 @@ class TProductAttributes extends StatelessWidget {
             Wrap(
               spacing: 6,
               children: [
-                TSectionheading(title: 'Sizes'),
-                SizedBox(height: TSizes.spaceBtwItems/2,),
+                const TSectionheading(title: 'Sizes'),
+                const SizedBox(height: TSizes.spaceBtwItems/2,),
                 TChoiceChip(text: 'UK 5',selected: true,onSelected: (value){}),
                 TChoiceChip(text: 'UK 6',selected: false,onSelected: (value){}),
                 TChoiceChip(text: 'UK 7',selected: false,onSelected: (value){}),

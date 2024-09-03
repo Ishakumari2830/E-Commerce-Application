@@ -8,7 +8,6 @@ import 'package:e_comrc/navigationMenu.dart';
 import 'package:e_comrc/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../../../../common/widgets/appBar/appbar.dart';
 import '../../../../common/widgets/products/cart/coupon_widget.dart';
@@ -29,23 +28,23 @@ class CheckoutScreen extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(TSizes.defaultSpace),
+          padding: const EdgeInsets.all(TSizes.defaultSpace),
           child: Column(
             children: [
               /// -- Items in the cart
-              TCartItems(showAddRemoveButton: false,),
-              SizedBox(height: TSizes.spaceBtwSections,),
+              const TCartItems(showAddRemoveButton: false,),
+              const SizedBox(height: TSizes.spaceBtwSections,),
 
               ///Coupon TextField
-              TCouponCode(),
-              SizedBox(height: TSizes.spaceBtwSections,),
+              const TCouponCode(),
+              const SizedBox(height: TSizes.spaceBtwSections,),
 
               ///Billing section
               TRoundedContainer(
                 showBorder: true,
                 backgroundColor: dark ? TColors.black : TColors.white,
-                padding: EdgeInsets.all(TSizes.md),
-                child: Column(
+                padding: const EdgeInsets.all(TSizes.md),
+                child: const Column(
                   children: [
                     ///Pricing
                     TBillingAmountSection(),
@@ -69,13 +68,13 @@ class CheckoutScreen extends StatelessWidget {
       ///CheckOut Button
    
       bottomNavigationBar: Padding(
-        padding:  EdgeInsets.all(TSizes.defaultSpace),
+        padding:  const EdgeInsets.all(TSizes.defaultSpace),
         child: ElevatedButton(
           onPressed: () => Get.to(() => SucessScreen(image: TImages.successfulPaymentIcon,
           title: 'Payment Successful',
           subtitle: 'Your Item will be shipped soon',
-          onPressed: ()=> Get.offAll(()=> NavigationMenu()),)),
-          child: Text('CheckOut \$ 256.0'),
+          onPressed: ()=> Get.offAll(()=> const NavigationMenu()),)),
+          child: const Text('CheckOut \$ 256.0'),
         ),
       ),
     );

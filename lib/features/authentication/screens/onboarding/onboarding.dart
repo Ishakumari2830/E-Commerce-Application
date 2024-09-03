@@ -1,4 +1,4 @@
-import 'package:e_comrc/features/authentication/controllers.onboarding/onboarding_controller.dart';
+
 
 
 import 'package:e_comrc/utils/contsants/image_strings.dart';
@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../../../../utils/contsants/text_strings.dart';
+import '../../controllers/onboarding/onboarding_controller.dart';
 import 'widgets/OnBoardingDotNavigation.dart';
 import 'widgets/OnBoardingNextButton.dart';
 import 'widgets/OnBoardingSkip.dart';

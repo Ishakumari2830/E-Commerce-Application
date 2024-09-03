@@ -15,10 +15,13 @@ dependencies:
   flutter:
     sdk: flutter
 
+ # Utility Packages
   http: ^1.2.2
   intl: ^0.19.0
   logger: ^2.4.0
+  lottie: ^3.1.2
   url_launcher: ^6.3.0
+  connectivity_plus: ^6.0.5
   flutter_native_splash: ^2.4.1
   smooth_page_indicator: ^1.2.0+3
 
@@ -33,6 +36,13 @@ dependencies:
   readmore: ^3.0.0
   carousel_slider: ^5.0.0
   flutter_rating_bar: ^4.0.1
+
+  # Firebase
+  
+  firebase_auth: ^5.2.0
+  cloud_firestore: ^5.3.0
+  firebase_core: ^3.4.0
+  google_sign_in: ^6.2.1
 
 
 dev_dependencies:
@@ -65,6 +75,7 @@ flutter:
     - assets/images/User/
     - assets/images/reviews/
     - assets/icons/payments_methods/
+    - assets/images/animation_lottie/
 
   fonts:
     - family: Poppins

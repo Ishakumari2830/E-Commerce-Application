@@ -6,7 +6,6 @@ import 'package:e_comrc/utils/contsants/sizes.dart';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../../../../common/widgets/custom_shapes/Container/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/Container/search_container.dart';
@@ -87,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                       height: TSizes.spaceBtwSections,
                     ),
                     ///HEADING
-                    TSectionheading(title: 'Popular products',onPressed: () => Get.to(()=> AllProducts())),
+                    TSectionheading(title: 'Popular products',onPressed: () => Get.to(()=> const AllProducts())),
                     const SizedBox(
                       height: TSizes.spaceBtwItems,
                     ),

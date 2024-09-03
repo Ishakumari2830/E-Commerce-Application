@@ -13,7 +13,7 @@ class TOverAllproductRating extends StatelessWidget {
         Expanded(
             flex: 3,//used for providing space in percentage
             child: Text('4.8', style: Theme.of(context).textTheme.displayLarge,)),
-        Expanded(
+        const Expanded(
           flex: 7,
           child: Column(
             children: [

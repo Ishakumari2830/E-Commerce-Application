@@ -15,7 +15,7 @@ class TCartItems extends StatelessWidget {
     return ListView.separated(
       shrinkWrap: true,//for visiblity of image
       itemCount: 2,
-      separatorBuilder: (_, __) => SizedBox(
+      separatorBuilder: (_, __) => const SizedBox(
         height: TSizes.spaceBtwSections,
       ),
 
@@ -23,13 +23,13 @@ class TCartItems extends StatelessWidget {
 
         children: [
           ///cart item
-          TCartItem(),
+          const TCartItem(),
           if(showAddRemoveButton)
-          SizedBox(height: TSizes.spaceBtwItems,),
+          const SizedBox(height: TSizes.spaceBtwItems,),
 
           ///Add remove button
           if(showAddRemoveButton)
-          Row(
+          const Row(
             //mainAxisSize: MainAxisSize.min,
 
             children: [

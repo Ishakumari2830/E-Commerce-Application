@@ -9,7 +9,6 @@ import 'package:e_comrc/features/shop/screen/product_reviews/product_reviews.dar
 import 'package:e_comrc/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:readmore/readmore.dart';
 
@@ -23,42 +22,42 @@ class ProductDetailScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Scaffold(
-      bottomNavigationBar: TBottomAddtoCart(),
+      bottomNavigationBar: const TBottomAddtoCart(),
       body: SingleChildScrollView(
         child: Column(
           children: [
             ///1 Product Image Slider
-            TProductImageSlider(),
+            const TProductImageSlider(),
 
             ///2. Product Details
             Padding(
-                padding: EdgeInsets.only(right: TSizes.defaultSpace,
+                padding: const EdgeInsets.only(right: TSizes.defaultSpace,
                     left: TSizes.defaultSpace,
                     bottom: TSizes.defaultSpace),
             child: Column(
               children: [
                 ///Rating and share
-                TratingAndShare(),
+                const TratingAndShare(),
                 ///Price,Title ,stock and brand
-                TProductMetaData(),
+                const TProductMetaData(),
                 ///attributes
-                TProductAttributes(),
-                SizedBox(
+                const TProductAttributes(),
+                const SizedBox(
                   height: TSizes.spaceBtwSections,
                 ),
 
                 ///checkout button
                 SizedBox(
                     width : double.infinity,
-                    child: ElevatedButton(onPressed: (){}, child: Text('CheckOut'))),
+                    child: ElevatedButton(onPressed: (){}, child: const Text('CheckOut'))),
 
-                SizedBox(height: TSizes.spaceBtwSections,),
+                const SizedBox(height: TSizes.spaceBtwSections,),
                 ///description
-                TSectionheading(title: 'Desription',showActionButton: false,),
-                SizedBox(
+                const TSectionheading(title: 'Desription',showActionButton: false,),
+                const SizedBox(
                   height: TSizes.spaceBtwItems,
                 ),
-                ReadMoreText(
+                const ReadMoreText(
                   'This is Product Description for White shoes,there are more things that can be added to this but i am not adding to it currently',
                   trimLines: 2,
                   trimMode: TrimMode.Line,
@@ -75,15 +74,15 @@ class ProductDetailScreen extends StatelessWidget {
                 ),
                 ///reviews
                 const Divider(),
-                SizedBox(height: TSizes.spaceBtwItems,),
+                const SizedBox(height: TSizes.spaceBtwItems,),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    TSectionheading(title: 'Reviews(20)',showActionButton: false,),
-                    IconButton(onPressed: () => Get.to(() => ProductReviewsscreen()), icon: Icon(Iconsax.arrow_right_3,size: 18,))
+                    const TSectionheading(title: 'Reviews(20)',showActionButton: false,),
+                    IconButton(onPressed: () => Get.to(() => const ProductReviewsscreen()), icon: const Icon(Iconsax.arrow_right_3,size: 18,))
                   ],
                 ),
-                SizedBox(height: TSizes.spaceBtwSections,)
+                const SizedBox(height: TSizes.spaceBtwSections,)
 
               ],
             ),)

@@ -4,7 +4,6 @@ import 'package:e_comrc/features/shop/screen/product_details/widget/product_deta
 import 'package:e_comrc/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/contsants/colors.dart';
@@ -23,7 +22,7 @@ class TProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () => Get.to(()=> ProductDetailScreen()),
+      onTap: () => Get.to(()=> const ProductDetailScreen()),
       child: Container(
           width: 180,
           padding: const EdgeInsets.all(1),

@@ -13,10 +13,10 @@ class TBottomAddtoCart extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = THelperFunctions.isDarkMode(context);
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: TSizes.defaultSpace,vertical: TSizes.defaultSpace/2),
+      padding: const EdgeInsets.symmetric(horizontal: TSizes.defaultSpace,vertical: TSizes.defaultSpace/2),
       decoration: BoxDecoration(
         color: dark ? TColors.darkerGrey : TColors.light,
-        borderRadius: BorderRadius.only(
+        borderRadius: const BorderRadius.only(
           topLeft: Radius.circular(TSizes.cardradiusLg),
           topRight: Radius.circular(TSizes.cardradiusLg),
         )
@@ -26,15 +26,15 @@ class TBottomAddtoCart extends StatelessWidget {
         children: [
           Row(
             children: [
-              TCircularIcon(icon: Iconsax.minus,
+              const TCircularIcon(icon: Iconsax.minus,
               backgroundColor: TColors.darkgrey,
               width: 40,
               height: 40,
               color: TColors.white,),
-              SizedBox(width: TSizes.spaceBtwItems,),
+              const SizedBox(width: TSizes.spaceBtwItems,),
               Text('2',style: Theme.of(context).textTheme.titleSmall,),
-              SizedBox(width: TSizes.spaceBtwItems,),
-              TCircularIcon(icon: Iconsax.add,
+              const SizedBox(width: TSizes.spaceBtwItems,),
+              const TCircularIcon(icon: Iconsax.add,
                 backgroundColor: TColors.black,
                 width: 40,
                 height: 40,
@@ -45,11 +45,11 @@ class TBottomAddtoCart extends StatelessWidget {
           ),
           ElevatedButton(onPressed: () {},
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.all(TSizes.md),
+                padding: const EdgeInsets.all(TSizes.md),
                 backgroundColor: TColors.black,
-                side: BorderSide(color: TColors.black)
+                side: const BorderSide(color: TColors.black)
               ),
-              child: Text('Add to Cart'))
+              child: const Text('Add to Cart'))
         ],
       ),
     );

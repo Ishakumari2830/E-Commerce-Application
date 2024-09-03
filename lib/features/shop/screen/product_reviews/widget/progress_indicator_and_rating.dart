@@ -28,7 +28,7 @@ class TRatingProgressIndicator extends StatelessWidget {
               value: value,//50 %
               minHeight: 13,
               backgroundColor: TColors.grey,
-              valueColor: AlwaysStoppedAnimation(
+              valueColor: const AlwaysStoppedAnimation(
                   TColors.primary
               ),
             ),

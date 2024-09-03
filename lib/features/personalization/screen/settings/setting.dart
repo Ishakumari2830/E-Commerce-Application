@@ -1,20 +1,18 @@
 import 'package:e_comrc/common/widgets/appBar/appbar.dart';
 import 'package:e_comrc/common/widgets/custom_shapes/Container/primary_header_container.dart';
-import 'package:e_comrc/common/widgets/images/t_circular_images.dart';
 import 'package:e_comrc/common/widgets/texts/section_heading.dart';
+import 'package:e_comrc/features/authentication/screens/login/login.dart';
 import 'package:e_comrc/features/personalization/screen/address/addresses.dart';
 import 'package:e_comrc/features/personalization/screen/profile/profile.dart';
 import 'package:e_comrc/features/shop/screen/order/order.dart';
 import 'package:e_comrc/utils/contsants/sizes.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../common/widgets/listTiles/setings_menu_tile.dart';
 import '../../../../common/widgets/listTiles/user_profile_tile.dart';
 import '../../../../utils/contsants/colors.dart';
-import '../../../../utils/contsants/image_strings.dart';
 
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});
@@ -43,7 +41,7 @@ class SettingScreen extends StatelessWidget {
 
                   ///User Profile Card
                   TUserProfileTile(onPressed : () => Get.to(()=> const ProfileScreen())),
-                  SizedBox(
+                  const SizedBox(
                     height: TSizes.spaceBtwSections,
                   ),
                 ],
@@ -51,18 +49,18 @@ class SettingScreen extends StatelessWidget {
             ),
 
             ///body
-            Padding(padding: EdgeInsets.all(TSizes.defaultSpace),
+            Padding(padding: const EdgeInsets.all(TSizes.defaultSpace),
               child: Column(
                 children: [
                   ///Account Setting
-                  TSectionheading(title: 'Account Setting',showActionButton: false,),
-                  SizedBox(height: TSizes.spaceBtwItems,),
+                  const TSectionheading(title: 'Account Setting',showActionButton: false,),
+                  const SizedBox(height: TSizes.spaceBtwItems,),
 
                   TSettingMenuTile(
                     icon: Iconsax.safe_home,
                     title: 'My Address',
                     subTitle: 'set shopping delivery address',
-                    onTap: () => Get.to(()=> UserAddressScreen()),
+                    onTap: () => Get.to(()=> const UserAddressScreen()),
                   ),
                   TSettingMenuTile(
                     icon: Iconsax.shopping_cart,
@@ -74,7 +72,7 @@ class SettingScreen extends StatelessWidget {
                     icon: Iconsax.bag_tick,
                     title: 'My Orders',
                     subTitle: 'In Progress and Completed Orders',
-                    onTap: () => Get.to(()=> OrderScreen()),
+                    onTap: () => Get.to(()=> const OrderScreen()),
                   ),
                   TSettingMenuTile(
                     icon: Iconsax.bank,
@@ -102,12 +100,12 @@ class SettingScreen extends StatelessWidget {
                   ),
 
                   ///App Settings
-                  SizedBox(
+                  const SizedBox(
                     height: TSizes.spaceBtwSections,
                   ),
-                  TSectionheading(title: 'App Settings',showActionButton: false,),
-                  SizedBox( height: TSizes.spaceBtwSections,),
-                  TSettingMenuTile(icon: Iconsax.document_upload, title: 'Load Data', subTitle: ' Upload data to cloud Firestore'),
+                  const TSectionheading(title: 'App Settings',showActionButton: false,),
+                  const SizedBox( height: TSizes.spaceBtwSections,),
+                  const TSettingMenuTile(icon: Iconsax.document_upload, title: 'Load Data', subTitle: ' Upload data to cloud Firestore'),
                   TSettingMenuTile(
                     icon: Iconsax.location,
                     title: 'Geolocation',
@@ -121,7 +119,7 @@ class SettingScreen extends StatelessWidget {
                   TSettingMenuTile(
                     icon: Iconsax.security_user,
                     title: 'Safe Mode',
-                    subTitle: 'Searh result is safe for all ages',
+                    subTitle: 'Search result is safe for all ages',
                     trailing: Switch(
                       value: false,
                       onChanged: (value){},
@@ -139,18 +137,18 @@ class SettingScreen extends StatelessWidget {
                     onTap: (){},
                   ),
                   ///logOut button
-                  SizedBox(
+                  const SizedBox(
                     height: TSizes.spaceBtwSections,
                   ),
 
                   SizedBox(
                     width: double.infinity,
                     child: OutlinedButton(
-                      onPressed: (){},
-                      child: Text('LogOut'),
+                      onPressed:  () => Get.to(()=> const LoginScreen()),
+                      child: const Text('LogOut'),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: TSizes.spaceBtwSections*2.5,
                   )
 

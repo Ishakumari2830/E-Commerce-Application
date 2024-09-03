@@ -1,22 +1,10 @@
 import 'package:e_comrc/common/widgets/appBar/appbar.dart';
-import 'package:e_comrc/common/widgets/icons/t_circular_iconn.dart';
-import 'package:e_comrc/common/widgets/images/t_rounded_images.dart';
-import 'package:e_comrc/common/widgets/texts/ProductPriceText.dart';
-import 'package:e_comrc/common/widgets/texts/ProductTitleText.dart';
-import 'package:e_comrc/common/widgets/texts/t_brand_title_text_with_verified_icon.dart';
 import 'package:e_comrc/features/shop/screen/cart/widgets/cart_items.dart';
 import 'package:e_comrc/features/shop/screen/checkOut/checkOut.dart';
 import 'package:e_comrc/utils/contsants/sizes.dart';
-import 'package:e_comrc/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:iconsax/iconsax.dart';
 
-import '../../../../common/widgets/products/cart/add_remove_button.dart';
-import '../../../../common/widgets/products/cart/cart_item.dart';
-import '../../../../utils/contsants/colors.dart';
-import '../../../../utils/contsants/image_strings.dart';
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
 
@@ -27,15 +15,15 @@ class CartScreen extends StatelessWidget {
         showBackArrow: true,
         title: Text('Cart',style: Theme.of(context).textTheme.headlineSmall,),
       ),
-      body: Padding(
+      body: const Padding(
         padding: EdgeInsets.all(TSizes.defaultSpace),
         ///Items in cart
         child: TCartItems(),
       ),
       ///checkout button
       bottomNavigationBar: Padding(
-        padding:  EdgeInsets.all(TSizes.defaultSpace),
-        child: ElevatedButton(onPressed: () => Get.to(()=>CheckoutScreen()),child: Text('CheckOut \$ 256.0'),),
+        padding:  const EdgeInsets.all(TSizes.defaultSpace),
+        child: ElevatedButton(onPressed: () => Get.to(()=>const CheckoutScreen()),child: const Text('CheckOut \$ 256.0'),),
       ),
     );
   }

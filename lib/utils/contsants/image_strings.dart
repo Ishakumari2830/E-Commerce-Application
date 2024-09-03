@@ -55,6 +55,10 @@ class TImages{
   static const String paytm = "assets/icons/payments_methods/paytm.png";
   static const String successfulPaymentIcon = "assets/icons/payments_methods/successful_payment.png";
 
+  ///Lottie Animation
+  static const String docerAnimation = "assets/images/animation_lottie/Animation - 1725130975191.json";
+  static const String successfullyRegisterAnimation = "assets/images/animation_lottie/processing.json";
+
 
 
 

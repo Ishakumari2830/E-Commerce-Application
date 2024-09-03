@@ -16,8 +16,8 @@ class TratingAndShare extends StatelessWidget {
         ///Rating
         Row(
           children: [
-            Icon(Iconsax.star5,color: Colors.amber,size: 24,),
-            SizedBox(width : TSizes.spaceBtwItems/2),
+            const Icon(Iconsax.star5,color: Colors.amber,size: 24,),
+            const SizedBox(width : TSizes.spaceBtwItems/2),
             Text.rich(
                 TextSpan(
                     children:[
@@ -33,7 +33,7 @@ class TratingAndShare extends StatelessWidget {
           ],
         ),
         ///Share Button
-        IconButton(onPressed: (){}, icon: Icon(Icons.share,size: TSizes.iconMd,))
+        IconButton(onPressed: (){}, icon: const Icon(Icons.share,size: TSizes.iconMd,))
       ],
     );
   }

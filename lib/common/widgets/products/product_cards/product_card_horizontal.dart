@@ -10,7 +10,6 @@ import 'package:iconsax/iconsax.dart';
 
 import '../../../../utils/contsants/colors.dart';
 import '../../../../utils/contsants/sizes.dart';
-import '../../../styles/shadows.dart';
 import '../../icons/t_circular_iconn.dart';
 
 class TProductCardHorizontal extends StatelessWidget {
@@ -33,12 +32,12 @@ class TProductCardHorizontal extends StatelessWidget {
           ///Thumbnail
           TRoundedContainer(
             height: 120,
-            padding: EdgeInsets.all(TSizes.sm),
+            padding: const EdgeInsets.all(TSizes.sm),
             backgroundColor: dark ? TColors.dark : TColors.light,
             child: Stack(
               children: [
                 ///Thumbnail Image
-                SizedBox(
+                const SizedBox(
                     height:120,
                     width: 120,
                     child: TRoundedImage(imageurl: TImages.product4,applyImageRadius: true,)),
@@ -70,7 +69,7 @@ class TProductCardHorizontal extends StatelessWidget {
               padding: const EdgeInsets.only(top: TSizes.sm,left: TSizes.sm),
               child: Column(
                 children: [
-                  Column(
+                  const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       TProductTitleText(title: 'White Nike half sleeve shirt',smallsize: true,),
@@ -78,13 +77,13 @@ class TProductCardHorizontal extends StatelessWidget {
                       TBrandTitleWithVerifiedIcon(title: 'Nike'),
                     ],
                   ),
-                  Spacer(),
+                  const Spacer(),
 
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       ///Pricing
-                      Flexible(child: TProductPriceText(price: '256.0 - 268.9')),
+                      const Flexible(child: TProductPriceText(price: '256.0 - 268.9')),
                       ///Add to cart
                       Container(
                         decoration: const BoxDecoration(

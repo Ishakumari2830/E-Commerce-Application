@@ -1,6 +1,5 @@
 import 'package:e_comrc/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 import '../../../../../common/widgets/appBar/appbar.dart';
@@ -28,7 +27,7 @@ class TProductImageSlider extends StatelessWidget {
         child: Stack(
           children: [
             ///Min Large Image
-            SizedBox(
+            const SizedBox(
                 height: 400,
                 child: Padding(
                   padding: EdgeInsets.all(TSizes.productImageRadius * 2),
@@ -46,25 +45,25 @@ class TProductImageSlider extends StatelessWidget {
               child: SizedBox(
                 height: 80,
                 child: ListView.separated(
-                  separatorBuilder: (_, __) => SizedBox(
+                  separatorBuilder: (_, __) => const SizedBox(
                     width: TSizes.spaceBtwItems,
                   ),
                   itemCount: 6,
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
-                  physics: AlwaysScrollableScrollPhysics(),
+                  physics: const AlwaysScrollableScrollPhysics(),
                   itemBuilder: (_, index) => TRoundedImage(
                       width: 80,
                       backgroundColor: dark ? TColors.dark : TColors.white,
                       border: Border.all(color: TColors.primary),
-                      padding: EdgeInsets.all(TSizes.sm),
+                      padding: const EdgeInsets.all(TSizes.sm),
                       imageurl: TImages.product5),
                 ),
               ),
             ),
 
             ///AppBAr Icon
-            TAppBar(
+            const TAppBar(
               showBackArrow: true,
               actions: [
                 TCircularIcon(
