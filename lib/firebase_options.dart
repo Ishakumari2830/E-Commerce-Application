@@ -47,7 +47,7 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCwZqvGqQmmKgOKTVzA8biG3QruUMg31eY',
+   
     appId: '1:688222880912:web:5b02a61ca2d998b52f0415',
     messagingSenderId: '688222880912',
     projectId: 'ecommerceapp-bcd67',
@@ -56,7 +56,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC7Y7Twz1pGKGgWyz_muSAvNjW1kFY37fI',
+   ,
     appId: '1:688222880912:android:d3421a6cb621e4e52f0415',
     messagingSenderId: '688222880912',
     projectId: 'ecommerceapp-bcd67',
@@ -64,7 +64,7 @@ class DefaultFirebaseOptions {
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyD7LeDh-h6nsb99HI6z72fI_ILObR1fvcg',
+   
     appId: '1:688222880912:ios:aa7d09ea1c34c54c2f0415',
     messagingSenderId: '688222880912',
     projectId: 'ecommerceapp-bcd67',
